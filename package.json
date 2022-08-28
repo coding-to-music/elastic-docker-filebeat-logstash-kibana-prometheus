@@ -1,0 +1,20 @@
+{
+  "name": "elastic-docker-filebeat-logstash-kibana-prometheus",
+  "version": "1.0.0",
+  "description": "Elastic Stack (ELK) v8+ on Docker with Compose. Pre-configured out of the box to enable Logging, Metrics, APM, Alerting, ML, and SIEM features. Up with a Single Command.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/coding-to-music/elastic-docker-filebeat-logstash-kibana-prometheus.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/coding-to-music/elastic-docker-filebeat-logstash-kibana-prometheus/issues"
+  },
+  "homepage": "https://github.com/coding-to-music/elastic-docker-filebeat-logstash-kibana-prometheus#readme"
+}
