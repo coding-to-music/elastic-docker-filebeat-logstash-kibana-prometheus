@@ -139,12 +139,13 @@ Elastdocker differs from `deviantony/docker-elk` in the following points.
    ```
 2. Initialize Elasticsearch Keystore and TLS Self-Signed Certificates
    ```bash
-   $ make setup
+   make setup
    ```
-   > **For Linux's docker hosts only**. By default virtual memory [is not enough](https://www.elastic.co/guide/en/elasticsearch/reference/current/vm-max-map-count.html) so run the next command as root `sysctl -w vm.max_map_count=262144`
+   > **For Linux's docker hosts only**. By default virtual memory [is not enough](https://www.elastic.co/guide/en/elasticsearch/reference/current/vm-max-map-count.html) so run the next command as root
+   > `sudo sysctl -w vm.max_map_count=262144`
 3. Start Elastic Stack
    ```bash
-   $ make elk           <OR>         $ docker-compose up -d
+   make elk           <OR>         docker-compose up -d
    ```
 4. Visit Kibana at [https://localhost:5601](https://localhost:5601) or `https://<your_public_ip>:5601`
 
@@ -165,49 +166,49 @@ Elastdocker differs from `deviantony/docker-elk` in the following points.
 #### To Start Monitoring and Prometheus Exporters
 
 ```shell
-$ make monitoring
+make monitoring
 ```
 
 #### To Start Tools
 
 ```shell
-$ make tools
+make tools
 ```
 
 #### To Ship Docker Container Logs to ELK
 
 ```shell
-$ make collect-docker-logs
+make collect-docker-logs
 ```
 
 #### To Start **Elastic Stack, Tools and Monitoring**
 
 ```
-$ make all
+make all
 ```
 
 #### To Start 2 Extra Elasticsearch nodes (recommended for experimenting only)
 
 ```shell
-$ make nodes
+make nodes
 ```
 
 #### To Rebuild Images
 
 ```shell
-$ make build
+make build
 ```
 
 #### Bring down the stack.
 
 ```shell
-$ make down
+make down
 ```
 
 #### Reset everything, Remove all containers, and delete **DATA**!
 
 ```shell
-$ make prune
+make prune
 ```
 
 </p>
